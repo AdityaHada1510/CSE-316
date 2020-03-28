@@ -86,4 +86,13 @@ int main(){
      cout<<endl<<endl;
      cout<<"Table of processes with completion record as they were completed\n\n";
      cout<<"\n\nProcess\tarrival\tFin\tTotal\tWait\n-------\t-------\t---\t-----\t----\n";
+     for(i=0;i<s;i++)
+          cout<<y[i][0]<<"\t"<<y[i][1]<<"\t"<<y[i][2]+1<<"\t"<<y[i]     [3]<<"\t"<<y[i][4]<<"\n";
+ 
+     cout<<"\navg. Wait time = "<<sum/p<<endl<<endl;
+     cout<<"____________________\nProgrammed by : Aditya\n\n";
+ 
+     
+     return 0;
+     }
       
