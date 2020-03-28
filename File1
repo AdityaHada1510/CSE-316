@@ -11,3 +11,14 @@ int main(){
  
      int x[p][5];
      int y[p][5];
+     cout<<"\nProcess\tarrival\tburst\n-------\t-------\t-----\n";
+     for(i=0;i<p;i++){
+          for(j=0;j<3;j++){
+               cin>>x[i][j];
+               }
+          x[i][3]=x[i][2]; 
+          }
+ 
+     cout<<"\n\n Gantt Chart is as follows (Verticle View)....\n\n";
+ 
+     i=x[0][1];
