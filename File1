@@ -66,4 +66,24 @@ int main(){
                     }
  
                pre_process_row=temp_row;
+               if(x[temp_row][2]==0){
+                    done++;
+                    y[s][0]=x[temp_row][0];
+                    y[s][1]=x[temp_row][1];
+                    y[s][2]=i;
+                    y[s][3]=x[temp_row][3];
+                    y[s][4]=((i-x[temp_row][1])-x[temp_row][3])+1;        
+                    sum+=((i-x[temp_row][1])-x[temp_row][3])+1;
+                    s++;
+                    }
+               }
+          i++;
+          }
+ 
+ 
+     printf("%5d-----------\n",i); 
+ 
+     cout<<endl<<endl;
+     cout<<"Table of processes with completion record as they were completed\n\n";
+     cout<<"\n\nProcess\tarrival\tFin\tTotal\tWait\n-------\t-------\t---\t-----\t----\n";
       
