@@ -22,3 +22,25 @@ int main(){
      cout<<"\n\n Gantt Chart is as follows (Verticle View)....\n\n";
  
      i=x[0][1];
+     while(done!=p){
+          got=0;
+          k=0;
+          while(k<p){
+               if(x[k][1]<=i){
+                    if(x[k][2]!=0){
+                         got=1;          
+                         temp_burst=x[k][2];
+                         temp_row=k;
+                         idle=0;
+                         break;
+                         }
+                    else
+                         k++;             
+                    }
+               else{
+                    if(idle==0)
+                         printf("%5d-----------\n        |Idle  |\n",i);
+                    idle=1;
+                    break;
+                    }
+               }
