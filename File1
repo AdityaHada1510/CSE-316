@@ -44,3 +44,26 @@ int main(){
                     break;
                     }
                }
+               if(got!=0){
+               k=0;
+               while(x[k][1]<=i && k<p){
+                    if(x[k][2]!=0){
+                         if(temp_burst>x[k][2]){
+                              temp_burst=x[k][2];
+                              temp_row=k;
+                              }
+                         }
+                    k++;
+                    }
+ 
+               x[temp_row][2]-=1;
+                
+               if(i==x[0][1])   
+                    printf("%5d-----------\n        |p-%-4d|\n",i,x[temp_row][0]);
+               else{
+                    if(pre_process_row!=temp_row)
+                         printf("%5d-----------\n        |p-%-4d|\n",i,x[temp_row][0]);                   
+                    }
+ 
+               pre_process_row=temp_row;
+      
