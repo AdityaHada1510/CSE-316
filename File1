@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+ 
+int main(){
+     int i,j,k,p,s=0, got=0, idle=0, temp_burst, temp_row, pre_process_row, done=0;
+     float sum=0;
+ 
+     cout<<"Please enter the number of process : ";
+     cin>>p;
+ 
+     int x[p][5];
+     int y[p][5];
